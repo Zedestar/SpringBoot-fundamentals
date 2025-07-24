@@ -6,14 +6,13 @@
 
     <!-- bean definitions here -->
 
-    <bean id="carSpecification" class="setter.injection.Specification">
-        <property name="make" value="Suzuki" />
-        <property name="model" value="Rava 4" />
+    <bean id="author" class="autowiring.byname.Author">
+        <property name="name" value="Melkizedeki Magota" />
+        <property name="email" value="mmagota2@gmail.com" />
     </bean>
 
-    <bean id="car" class="setter.injection.Car" >
-        <property name="specification" ref="carSpecification"/>
-    </bean>
+    <bean id="myBook" class="autowiring.byname.Book" autowire="byName"/>
+
 
 
 </beans>
