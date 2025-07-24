@@ -1,14 +1,21 @@
 package scan.component.scanning;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Employee {
-
+    @Value("200")
     private  int employeeId;
+
+    @Value("Barnabas")
     private String firstName;
+
+    @Value("Magota")
     private String lastName;
+
+    @Value("ZeeBiz#{6*4}@gmail.com")
     private String email;
 
 
