@@ -10,5 +10,8 @@ public class App {
 
         Employee employee = (Employee) context.getBean("employee");
         System.out.println(employee);
+
+        Manager manager = (Manager) context.getBean("manager");
+        System.out.println(manager);
     }
 }
